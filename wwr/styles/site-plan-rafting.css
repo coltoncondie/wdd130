@@ -1,34 +1,19 @@
-.rock-salt-regular {
-    font-family: "Rock Salt", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-.roboto-slab-custom300 {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-body{
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rock+Salt&display=swap');
 :root {
     --primary-color: #346314;
     --secondary-color: #000000;
     --accent1-color: #92f8ff;
     --accent-color: #FFFAFF;
 
-    --heading-font: .rock-salt-regular, serif;
-    --paragraph-font: .roboto-slab-custom300, serif;
+    --heading-font: "Rock Salt", serif;
+    --paragraph-font: "Roboto Slab", serif;
 
     --nav-background-color: #346314;
     --nav-link-color: #92f8ff;
     --nav-hover-link-color: #411ca5;
     --nav-hover-background-color: #7af32a;
-}
+}    
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
