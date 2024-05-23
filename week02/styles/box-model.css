@@ -1,7 +1,7 @@
 .callout {
 	width: 400px;
     margin: 10px;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);       /* This is a comment... but I do believe that this code is for the title/ title background.  */
     padding: 15px;
     background-color: #247;
     color: #fff;
@@ -10,7 +10,7 @@
 .callout img {
 	float: right;
     margin: 0 0 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid #000;             /*This is the style for the photo.*/
     padding: 3px;
     background-color: #bbb;
     width: 100px;
