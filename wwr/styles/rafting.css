@@ -102,7 +102,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+    font-size: 20px;
     padding: 25px;
+    color:#FFFAFF
 }
 .sociallinks {
     font-size: 1.0rem;
@@ -111,15 +113,21 @@ p {
     
 }
 .sociallinks {
-    display: block;
+    display: flex;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 20px;
+
 }
 .sociallinks:link, .sociallinks:visited {
     color: var(--nav-link-color);
 }
-.sociallinks :hover {
+.sociallinks a {
+    padding: 20px 20px 20px; /* Adjust as needed*/
+    line-height: 20px;
+    
+    
+}
+.sociallinks a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
