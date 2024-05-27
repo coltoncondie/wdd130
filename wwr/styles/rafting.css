@@ -21,6 +21,13 @@ header{
     text-align: center;
     text-decoration: none;
     background-color: #346314;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    
 }
 header a {
     font-size: 40px;
@@ -30,8 +37,16 @@ header a {
     color: #92f8ff; /* Replace with the color you want */
     text-decoration: none; /* This removes the underline */
 }
+header a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
 header img {
     float: left;
+    margin: 0 0.25rem 0 1rem;
+    width: 120px;
+    height: auto;
+    
 }
 .hero img {
     display: block;
@@ -50,37 +65,70 @@ header img {
 .hero p {
     color: white;
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 15px;
+    text-shadow: 0 0 50px rgb(48, 245, 9);
+    z-index: 2;
 }
 .hero article img {
     width: 25%; /* Adjust as needed */
     position: absolute;
     bottom: 175px;
     right: 25px;
+    z-index: 1;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+.advent-grid {
+    text-align: center;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.image-grid {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.image-grid img {
+    flex: 0 0 auto;
+    object-fit: cover; /* This will maintain the aspect ratio */
+    height: 500px; /* Or whatever height you prefer */
+    width: auto; /* This will keep the original image width */
+}
+
 p {
     padding: 25px;
 }
-nav{
-    background-color: var(--nav-background-color);
+.sociallinks {
     font-size: 1.0rem;
     display: flex;
+    flex-direction: row;
+    
 }
-nav a {
+.sociallinks {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 20px;
 }
-nav a:link, nav a:visited {
+.sociallinks:link, .sociallinks:visited {
     color: var(--nav-link-color);
 }
-nav a:hover {
+.sociallinks :hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+.sociallinks img {
+    width: 75px; /* Adjust this to your desired width */
+    height: 75px; /* Adjust this to your desired height */
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-background-color)
 }
