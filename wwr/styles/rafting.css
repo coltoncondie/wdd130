@@ -100,11 +100,22 @@ h1, h2, h3, h4, h5, h6 {
     height: 500px; /* Or whatever height you prefer */
     width: auto; /* This will keep the original image width */
 }
-
-p {
-    font-size: 20px;
-    padding: 25px;
-    color:#FFFAFF
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--nav-background-color);
+}
+.history-grid p:first-of-type {
+    color: #92f8ff;
+}
+.history-grid p:last-of-type {
+    color:#92f8ff;
+}
+.history-grid img {
+    width: 80%;
 }
 .sociallinks {
     font-size: 1.0rem;
@@ -139,4 +150,9 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: var(--nav-background-color)
+}
+footer p {
+    font-size: 20px;
+    padding: 25px;
+    color:#92f8ff;
 }
