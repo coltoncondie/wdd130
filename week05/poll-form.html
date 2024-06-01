@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,intial-scale=1.0" >
+     <title>WDD 130 | HTML Form - User Poll</title>
+     <meta name="description" content="This is the form page that will gather some personal information and poll answers.">
+     <meta name="author" content="Colton Michael Condie">
+     <link rel="stylesheet" href="styles/poll-form.css">
+
+  </head>
+  <body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!--form elements will go here -->
+                
+                 <label for="fullname">Full Name</label>                <!--Full name section of the form.-->
+                 <input type="text" id="fullname" name="fullname">
+                <br>
+                 <label id="email">Email</label>                        <!--Email section of the form.-->
+                 <input type="text" id="useremail" name="useremail"> 
+                
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!--form elements will go here -->
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="option1">Mozilla FireFox</option>
+                    <option value="option2">Google Chrome</option>      <!--In this area I have my question with three options on browsers.-->
+                    <option value="option3">Microsoft Edge</option>
+                </select>
+                <br>
+                <label for="pet">Do you have a household pet?</label>       <!--This is the checkbox for Household pet.-->
+                <input type="checkbox" id="pet" name="pet">
+                <br>
+                <label id="placelived">List the places you have lived:</label>     <!--This is the Places lived part of the form. -->
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Salt Lake City Utah, Phoenix Arizona, Sacramento California"></textarea>
+            </fieldset>                 
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+      <p>©2024 | HTML Form - User Poll Activity | Colton Michael Condie</p>
+    </footer>
+    </body>
