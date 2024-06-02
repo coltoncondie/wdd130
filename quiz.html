@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,intial-scale=1.0" >
+     <title>WDD 130 | Basic HTML and CSS Quiz</title>
+     <meta name="description" content="This page contains a Quiz on the basics of HTML and CSS.">
+     <meta name="author" content="Colton Michael Condie">
+     <link rel="stylesheet" href="styles/quiz.css">
+
+  </head>
+  <body>
+    <header>
+        <h1>WDD 130 | Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>HTML Basics Quiz</legend>
+                 <div class="Quiz-q1">
+                    <label for="q1"><span class="highlight">Question 1</span>: What does HTML stand for?</label>                <!--Question 1 section of the Quiz.-->
+                    <input type="text" id="q1" name="q1" maxlength="40">
+                 </div>
+                 <br>
+                 <div class="Quiz-q2">
+                    <label for="q2"><span class="highlight">Question 2</span>: What is the proper way to open and close the header?</label>                        <!--Question 2 section of the Quiz.-->
+                    <textarea id="q2" name="q2" rows="2"></textarea>
+                 </div>
+                 <br>
+                 <div class="Quiz-q3">
+                    <label for="q3"><span class="highlight">Question 3</span>: If you wanted to seperate a groupe of code to make styling easier in HTML what would be the best choice?</label>
+                    <select name="q3" id="q3">
+                        <option value="option1">A div Container</option>
+                        <option value="option2">A section Container</option>                    <!--Question 3 section of the Quiz-->
+                        <option value="option3">A aside container</option>
+                    </select>
+                 </div>
+            </fieldset>
+            <fieldset>
+                
+                <legend>CSS Basics Quiz</legend>
+                 <div class="Quiz-q4">
+                    <label for="q4"><span class="highlight">Question 4</span>: How comfortable would you say you are in a scale from 1 to 10 at using CSS?</label>             <!--Question 4 section of the Quiz-->
+                    <input type="number" id="q4" name="q4" min="1" max="10" >
+                 </div>
+                 <br>
+                 <div class="Quiz-q5">
+                    <label for="q5"><span class="highlight">Question 5</span>: What is the proper way to give a paragraph color in CSS?</label>         <!--Question 5 section of the Quiz-->
+                    <textarea id="q5" name="q5" rows="4"></textarea>
+                 </div>
+                 <div class="Quiz-q6">
+                    <label for="q6"><span class="highlight">Question 6</span>: When improting font, for example from google fonts were should you put the @import link?</label>
+                    <select name="q6" id="q6">
+                        <option value="option1">Where you add your fonts.</option>
+                        <option value="option2">In your universal selector. </option>                   <!--Question 6 section of the Quiz-->
+                        <option value="option3">At the very top of you CSS page.</option>
+                    </select>
+                 </div>
+            </fieldset>                 
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+      <p>©2024 | WDD 130 | Basic HTML and CSS Quiz | Colton Michael Condie</p>
+    </footer>
+    </body>

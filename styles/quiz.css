@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');     /*This is the import for the Work Sans font */
+
+* {
+  margin: 0;
+  padding: 0;                     /*This is the styling for the Universal selector*/
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", serif;
+  font-size: 1.2em;               /*This is the styling for the body */
+  color: #333;
+  background-color: #fff;
+}
+header {
+  margin: 0 auto;
+  width: 650px;
+}
+h1 {
+  margin: 1rem;
+  font-size: 1.5em;
+  color:navy;                   /*This is the styling for the h1 header */
+  text-align: center;
+}
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;                  /*This is the styling for the form */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;                   /*This is the styling for the fieldset */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+legend {
+  padding: 0.5rem;
+  color: navy;                  /*This is the styling of the legend */
+  font-size: 1.3em;
+}
+label, input, button, select, textarea {            /*This changes the text for these areas, label, input, button, select, textarea*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+input, select, textarea {
+  padding: .5rem;
+  font-size: 1.1rem;
+  text-align: right;
+  
+}
+.Quiz-q1 {
+    text-align: center;
+    
+}
+.Quiz-q1 label {
+    text-align: left;
+    display: block;
+}
+.highlight {
+    color: navy; /* Or any color you prefer */
+}
+.Quiz-q2 {
+    text-align: center;
+}
+
+.Quiz-q2 label {
+    text-align: left;
+    display: block;
+}
+.Quiz-q3 {
+    text-align: center;
+}
+
+#q1, #q2, #q4, #q5 {
+    width: 500px;
+}
+
+
+
+#q3, #q6  {
+    background-color: #333;
+    color:#eee;
+    width: 500px;
+    text-align: center;
+}
+
+
+.Quiz-q3 label {
+    text-align: left;
+    display: block;
+}
+.Quiz-q4 {
+    text-align: center;
+}
+
+.Quiz-q4 label {
+    text-align: left;
+    display: block;
+}
+.Quiz-q5 {
+    text-align: center;
+}
+
+.Quiz-q5 label {
+    text-align: left;
+    display: block;
+}
+.Quiz-q6 {
+    text-align: center;
+}
+
+.Quiz-q6 label {
+    text-align: left;
+    display: block;
+}
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;                    /*This is the style information for the button */
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+button:hover {
+  background-color: darkgreen;      /*This is the styling that changes the color of the button when the mouse hovers over it. */
+}
+footer {
+  margin: 1rem auto 0;
+  width: 650px;
+  text-align: center;               /*This is the styling for the footer*/
+  font-size: 0.8em;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
