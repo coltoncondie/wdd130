@@ -55,68 +55,63 @@ input, select, textarea {
   text-align: right;
   
 }
-.Quiz-q1 {
+#q1 {
     text-align: center;
     
 }
-.Quiz-q1 label {
+#q1 label {
     text-align: left;
     display: block;
 }
 .highlight {
     color: navy; /* Or any color you prefer */
 }
-.Quiz-q2 {
+#q2 {
     text-align: center;
 }
 
-.Quiz-q2 label {
+#q2 label {
     text-align: left;
     display: block;
 }
-.Quiz-q3 {
+#q3 {
     text-align: center;
 }
 
 #q1, #q2, #q4, #q5 {
     width: 500px;
 }
-
-
-
 #q3, #q6  {
     background-color: #333;
     color:#eee;
     width: 500px;
     text-align: center;
 }
-
-
-.Quiz-q3 label {
+#q3 label {
     text-align: left;
     display: block;
 }
-.Quiz-q4 {
+#q4 {
     text-align: center;
 }
 
-.Quiz-q4 label {
+#q4 label {
     text-align: left;
     display: block;
 }
-.Quiz-q5 {
+#q5 {
     text-align: center;
 }
 
-.Quiz-q5 label {
+#q5 label {
     text-align: left;
     display: block;
 }
-.Quiz-q6 {
+#q6 {
     text-align: center;
 }
 
-.Quiz-q6 label {
+#q6 label {
     text-align: left;
     display: block;
 }
