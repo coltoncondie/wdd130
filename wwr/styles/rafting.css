@@ -77,9 +77,18 @@ header img {
     right: 25px;
     z-index: 1;
 }
+section {
+    display: flex;
+    padding: 70px;
+    align-items: center;
+    align-content: center;
+    background-color: var(--nav-background-color);
+    color: var(--accent1-color);
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 .advent-grid {
     text-align: center;
@@ -99,6 +108,28 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover; /* This will maintain the aspect ratio */
     height: 500px; /* Or whatever height you prefer */
     width: auto; /* This will keep the original image width */
+}
+.map {
+    align-items: center;
+    display: block;
+    padding: 50px;
+    margin: 0 auto;
+    width: 400px;
+}
+#employee1 img {
+    display:block;
+    width: 250px;
+    padding: 10px;
+}
+#employee2 img {
+    display:block;
+    width: 250px;
+    padding: 20px;
+}
+#employee3 img {
+    display:block;
+    width: 250px;
+    padding: 10px;
 }
 .history-grid {
     display: grid;
