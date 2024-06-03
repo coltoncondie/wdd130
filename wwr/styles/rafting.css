@@ -1,28 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rock+Salt&display=swap');            /*(Both pages) This is the import for the fonts Roboto Slab and Rock Salt*/
 :root {
     --primary-color: #346314;
-    --secondary-color: #000000;
+    --secondary-color: #000000;                         /*(Both pages) This is the root for the pages to use my colorscheme I chose for this project */
     --accent1-color: #92f8ff;
     --accent2-color: #FFFAFF;
 
     --heading-font: "Rock Salt", serif;
-    --paragraph-font: "Roboto Slab", serif;
+    --paragraph-font: "Roboto Slab", serif;                     /*(Both pages) This is the set fonts set up for quick use by var (which ever you need)*/
 
     --nav-background-color: #346314;
-    --nav-link-color: #92f8ff;
+    --nav-link-color: #92f8ff;                              /*(both pages) This is the other options of color I have chosen for the pages same for text to use these use var (which color you want)*/
     --nav-hover-link-color: #411ca5;
     --nav-hover-background-color: #7af32a;
 }
 body{
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto;                                         /*(Both pages) This sets up the body for the pages sets the size and background color and margin*/
+    background-color: var(--primary-color);
+    
+}
+.title-for-contact {
+    border: 10px double #92f8ff; /* Adjust color and thickness as needed */             /*(Contact page) This is for the border for the title*/
 }
 header{
     text-align: center;
     text-decoration: none;
     background-color: #346314;
-    margin: 1rem auto;
-    display: grid;
+    margin: 1rem auto;                              /*(both pages) This sets up the text to center clears any decoration adds background color sets margin */
+    display: grid;                                  /*It also sets up to use grid sets up 5 columns aligns the items to center and adds a bottom border max width 1000px*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     border-bottom: 1px solid #ccc;
@@ -32,40 +37,40 @@ header{
 header a {
     font-size: 40px;
     text-align: center;
-    line-height: 155px;
+    line-height: 155px;                                         /*(Both pages) This sets up both pages top link bars to link the other pages this sets their color and how they line up*/
     margin-right: 15px;
     color: #92f8ff; /* Replace with the color you want */
     text-decoration: none; /* This removes the underline */
 }
 header a:hover {
-    color: var(--nav-hover-link-color);
+    color: var(--nav-hover-link-color);                         /*(Both pages) This only makes it so if the cursor goes over the page links they change color*/
     background-color: var(--nav-hover-background-color);
 }
 header img {
     float: left;
-    margin: 0 0.25rem 0 1rem;
+    margin: 0 0.25rem 0 1rem;                   /*(both pages) This is for the logo it sets the location and size of it*/
     width: 120px;
     height: auto;
     
 }
 .hero img {
     display: block;
-    width: 100%;
+    width: 100%;                                /*(About page)*/
     height: auto;
 }
 .hero {
-    position: relative;
+    position: relative;                         /*(About page)*/
 }
 .hero h1 {
     color:#92f8ff;
-    position: absolute;
+    position: absolute;                         /*(About page)*/
     top: 50px;
     left: 75px;
 }
 .hero p {
     color: white;
     position: absolute;
-    top: 190px;
+    top: 190px;                                     /*(About page)*/
     left: 15px;
     text-shadow: 0 0 50px rgb(48, 245, 9);
     z-index: 2;
@@ -73,117 +78,169 @@ header img {
 .hero article img {
     width: 25%; /* Adjust as needed */
     position: absolute;
-    bottom: 175px;
+    bottom: 175px;                              /*(About page)*/
     right: 25px;
     z-index: 1;
+}
+.company {
+    border: 10px double #92f8ff;                    /*(About page)*/
+    font-family: var(--paragraph-font);
 }
 section {
     display: flex;
     padding: 70px;
-    align-items: center;
+    align-items: center;                                /*(About page)*/
     align-content: center;
     background-color: var(--nav-background-color);
     color: var(--accent1-color);
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+form {
+    font-family: var(--paragraph-font);
+    background-color: black;
+    border: 3px solid #2bcef7;
+    padding: 20px;                  /*(Contact page) This is my form element Style I added a black background and light blue border*/
+    text-align: left;
+    align-content: center;
+    display: flex;
+}
+input[type="text"], input[type="email"] {           /*(contact Page) This made it so I could stretch the Full Name and Email box evenly across the page form*/
+    width: 95%;
+}
+.all-radios {
+    display: flex;
+    flex-direction: column;                         /*(Contact page)*/
+    align-items: flex-end;
+}
+h3, h4, h5, h6 {
+    font-family: var(--paragraph-font);
+    text-align: center;                             /*() Need to fix*/
+    color: whitesmoke;
+}
+h1, h2 {
     text-align: center;
+    color: var(--accent1-color);
+    border: #92f8ff;                        /*() Need to fix*/
+    font-family: var(--heading-font)
+}
+li {
+    text-align: center;
+    list-style-position: inside;
+    font-family: var(--paragraph-font);                 /*(Contact page)*/
+    color: whitesmoke;
 }
 .advent-grid {
-    text-align: center;
+    text-align: center;                                         /*(About page)*/
 }
 .image-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;                     /*(About page)*/
     gap: 10px;
 }
 .image-grid {
     display: flex;
-    overflow-x: auto;
+    overflow-x: auto;                                               /*(About page)*/
     white-space: nowrap;
 }
 .image-grid img {
     flex: 0 0 auto;
-    object-fit: cover; /* This will maintain the aspect ratio */
+    object-fit: cover; /* This will maintain the aspect ratio */        /*(About page)*/
     height: 500px; /* Or whatever height you prefer */
     width: auto; /* This will keep the original image width */
 }
-.map {
-    align-items: center;
-    display: block;
-    padding: 50px;
-    margin: 0 auto;
-    width: 400px;
+.outer {
+    background-color: var(--primary-color);                 /*(Contact page)*/
 }
+.padding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;                                          /*(Contact page) This is for setting up padding and adjusting the location for the Google map snip-it*/
+    background-color: var(--secondary-color);
+    width: 70%; /* Adjust this as needed */
+    margin: auto;
+    /* Rest of your styles */
+}
+@keyframes colorChange {
+    0% { background-color:var(--nav-hover-background-color) }
+    25% { background-color: rgb(36, 223, 248); }
+    50% { background-color: rgb(4, 53, 30); }                         /*(right now Contact page) This area gives a slow but appealing color change for the background.*/
+    75% {background-color: rgb(50, 177, 18);}
+    100%{background-color: #e7f70e;}
+
+}
+
 #employee1 img {
+    
     display:block;
     width: 250px;
     padding: 10px;
+    animation: colorChange 10s infinite;        /*(Contact Page) setting up the first employee photo and the animation is for using the @keyframes colorChange*/
 }
 #employee2 img {
-    display:block;
-    width: 250px;
-    padding: 20px;
-}
-#employee3 img {
+   
     display:block;
     width: 250px;
     padding: 10px;
+    animation: colorChange 10s infinite;        /*(Contact page) This is for setting up employee 2 image */
+}
+#employee3 img {
+    
+    display:block;
+    width: 250px;                           /*(Contact page)  this is for image 3 for the employee with slaw color changing border*/
+    padding: 10px;
+    animation: colorChange 10s infinite;
 }
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    justify-items: center;
-    align-items: center;
+    justify-items: center;                          /*(About page) This style is for setting up the grid for the page by centering the items and seting padding for space between*/
+    align-items: center;                            /*() items and setting the background color*/
     padding: 20px;
     background-color: var(--nav-background-color);
 }
 .history-grid p:first-of-type {
-    color: #92f8ff;
+    color: #92f8ff;                             /*(About page) This is for the first paragraph in the history section it changes the color of the text*/
 }
 .history-grid p:last-of-type {
-    color:#92f8ff;
+    color:#92f8ff;                              /*(About page) This is for the second paragraph in the history section and it also changes the color of the text*/
 }
 .history-grid img {
-    width: 80%;
+    width: 80%;                                   /*(About page) This is also in the history section and it is resposible for the width of the section */
 }
 .sociallinks {
     font-size: 1.0rem;
-    display: flex;
+    display: flex;                                /*(Both pages) This is for the social links setting the font size and setting up the flex to line things up in one row*/
     flex-direction: row;
     
 }
 .sociallinks {
     display: flex;
-    color: var(--nav-link-color);
+    color: var(--nav-link-color);                  /*(Both pages) This is for the social links it is responsible for the color and removing the decoration on the image like underlines etc*/
     text-decoration: none;
 
 }
-.sociallinks:link, .sociallinks:visited {
+.sociallinks:link, .sociallinks:visited {          /*(Both pages) This is for color in social links*/
     color: var(--nav-link-color);
 }
 .sociallinks a {
-    padding: 20px 20px 20px; /* Adjust as needed*/
+    padding: 20px 20px 20px; /* Adjust as needed*/      /*(Both pages) This is for the padding for the social links and line hight*/
     line-height: 20px;
-    
-    
 }
 .sociallinks a:hover {
-    color: var(--nav-hover-link-color);
+    color: var(--nav-hover-link-color);                     /*(Both pages) This is for when you hover over the social link button the color will change */
     background-color: var(--nav-hover-background-color);
 }
 .sociallinks img {
-    width: 75px; /* Adjust this to your desired width */
+    width: 75px; /* Adjust this to your desired width */        /*(Both pages) This is responsible for settin the height and width of the logos*/
     height: 75px; /* Adjust this to your desired height */
 }
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;                             /*(Both pages) This is for the footer using flex to give space between the items and set the background color*/
     background-color: var(--nav-background-color)
 }
 footer p {
     font-size: 20px;
-    padding: 25px;
+    padding: 25px;                                          /*(Both pages) This sets the paragraph in the footer with font size padding around it and sets the color*/
     color:#92f8ff;
 }
