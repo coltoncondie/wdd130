@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rock+Salt&display=swap');            /*(Both pages) This is the import for the fonts Roboto Slab and Rock Salt*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rock+Salt&display=swap');
 :root {
     --primary-color: #346314;
     --secondary-color: #000000;                         /*(Both pages) This is the root for the pages to use my colorscheme I chose for this project */
@@ -13,14 +13,24 @@
     --nav-hover-link-color: #411ca5;
     --nav-hover-background-color: #7af32a;
 }
+@keyframes colorChange {
+    0% { background-color:var(--nav-hover-background-color) }
+    25% { background-color: rgb(36, 223, 248); }
+    50% { background-color: rgb(4, 53, 30); }                         /*(right now Contact page) This area gives a slow but appealing color change for the background.*/
+    75% {background-color: rgb(50, 177, 18);}
+    100%{background-color: #e7f70e;}
+}
 body{
     max-width: 960px;
     margin: 0 auto;                                         /*(Both pages) This sets up the body for the pages sets the size and background color and margin*/
     background-color: var(--primary-color);
-    
+    border: 10px solid #92f8ff;
 }
 .title-for-contact {
-    border: 10px double #92f8ff; /* Adjust color and thickness as needed */             /*(Contact page) This is for the border for the title*/
+    border-bottom: 10px double #92f8ff;                 /*(Contact page) This is for the border for the title*/
+     
+
+    
 }
 header{
     text-align: center;
@@ -65,15 +75,17 @@ header img {
     color:#92f8ff;
     position: absolute;                         /*(About page)*/
     top: 50px;
-    left: 75px;
+    left: 250px;
+    font-size: 35px;
 }
 .hero p {
     color: white;
     position: absolute;
-    top: 190px;                                     /*(About page)*/
+    top: 210px;                                     /*(About page)*/
     left: 15px;
     text-shadow: 0 0 50px rgb(48, 245, 9);
     z-index: 2;
+    padding-left: 30px;
 }
 .hero article img {
     width: 25%; /* Adjust as needed */
@@ -83,17 +95,9 @@ header img {
     z-index: 1;
 }
 .company {
-    border: 10px double #92f8ff;                    /*(About page)*/
-    font-family: var(--paragraph-font);
+    font-family: var(--paragraph-font);         /*(About page)*/
 }
-section {
-    display: flex;
-    padding: 70px;
-    align-items: center;                                /*(About page)*/
-    align-content: center;
-    background-color: var(--nav-background-color);
-    color: var(--accent1-color);
-}
+
 form {
     font-family: var(--paragraph-font);
     background-color: black;
@@ -129,7 +133,7 @@ li {
     color: whitesmoke;
 }
 .advent-grid {
-    text-align: center;                                         /*(About page)*/
+    align-self: auto;               /*(About page)*/
 }
 .image-grid {
     display: grid;
@@ -160,15 +164,14 @@ li {
     margin: auto;
     /* Rest of your styles */
 }
-@keyframes colorChange {
-    0% { background-color:var(--nav-hover-background-color) }
-    25% { background-color: rgb(36, 223, 248); }
-    50% { background-color: rgb(4, 53, 30); }                         /*(right now Contact page) This area gives a slow but appealing color change for the background.*/
-    75% {background-color: rgb(50, 177, 18);}
-    100%{background-color: #e7f70e;}
-
+.contacting {
+    display: flex;
+    padding: 70px;
+    align-items: center;                                /*(About page)*/
+    align-content: center;
+    background-color: var(--nav-background-color);
+    color: var(--accent1-color);
 }
-
 #employee1 img {
     
     display:block;
@@ -243,4 +246,7 @@ footer p {
     font-size: 20px;
     padding: 25px;                                          /*(Both pages) This sets the paragraph in the footer with font size padding around it and sets the color*/
     color:#92f8ff;
+}
+.team {
+display: none;
 }
