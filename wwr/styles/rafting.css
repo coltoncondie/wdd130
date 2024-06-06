@@ -32,6 +32,114 @@ body{
 
     
 }
+.home-paged {
+    position: absolute;
+    display: block;
+    margin-left: 230px;                 /*home page*/
+    background-color: transparent;
+    border: solid #2bcef7
+    
+
+}
+img .home-page {
+    position: relative;             /*home page*/
+}
+.trip-launcher {
+    position: absolute;
+    margin-top: -1150px;            /*home page*/
+    width: 960px;
+}
+.trip-launcher h3 {
+    background-color: rgba(97, 95, 95, 0.5);            /*home page*/
+    
+}
+.trip-submit {
+    width: 130px;
+    margin-left: 410px;             /*home page*/
+}
+.our-purpose {
+    position: absolute;
+    margin-top: -900px;
+    display: flex;              /*home page*/
+    gap: 20px;
+    margin-left: 10px;
+    
+}
+.article-paragraph {
+    position: absolute;
+    color: var(--accent1-color);
+    margin-top: -750px;                 /*home page*/
+    width: 450px;
+    margin-left: 10px;
+    background-color: rgba(97, 95, 95, 0.5);
+    font-size: 1.5em;
+    
+
+}
+.submission1 {
+    display: flex;
+    font-family: var(--paragraph-font);
+    background-color: black;
+    border: 3px solid #2bcef7;
+    padding: 20px;                          /*home page*/
+    position: absolute;
+    margin-top: -900px;
+    width: 360px;
+    margin-left: 500px;
+    color: var(--accent1-color);
+    height: 320px;
+}
+.table {
+    color: var(--accent1-color);
+    margin-left: 150px;
+}
+
+.trip-adventure1 img {
+    margin-top: -75px;
+    margin-left: 500px;
+
+}
+.trip-adventure1 p {
+    width: 400px;
+    color: var(--accent1-color);
+    padding: 20px;
+}
+
+.trip-adventure2 img {
+    margin-top: -75px;
+    margin-left: 500px;
+    
+
+}
+.trip-adventure2 p {
+    width: 400px;
+    color: var(--accent1-color);
+    padding: 20px;
+}
+
+.trip-mild-wild img {
+    margin-top: -75px;
+    margin-left: 500px;
+    
+
+}
+.trip-mild-wild p {
+    width: 400px;
+    color: var(--accent1-color);
+    padding: 20px;
+}
+
+.certified-wild img {
+    margin-top: -75px;
+    margin-left: 500px;
+
+}
+.certified-wild p {
+    width: 400px;
+    color: var(--accent1-color);
+    padding: 20px;
+}
+
 header{
     text-align: center;
     text-decoration: none;
@@ -98,7 +206,7 @@ header img {
     font-family: var(--paragraph-font);         /*(About page)*/
 }
 
-form {
+.contact-form {
     font-family: var(--paragraph-font);
     background-color: black;
     border: 3px solid #2bcef7;
@@ -106,7 +214,8 @@ form {
     text-align: left;
     align-content: center;
     display: flex;
-}
+} 
+
 input[type="text"], input[type="email"] {           /*(contact Page) This made it so I could stretch the Full Name and Email box evenly across the page form*/
     width: 95%;
 }
@@ -246,6 +355,11 @@ footer p {
     font-size: 20px;
     padding: 25px;                                          /*(Both pages) This sets the paragraph in the footer with font size padding around it and sets the color*/
     color:#92f8ff;
+}
+.wire-frame {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 150px;
 }
 .team {
 display: none;
